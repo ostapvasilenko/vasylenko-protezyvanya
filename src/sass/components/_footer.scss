@@ -75,4 +75,15 @@
     &__info {
         margin-right: 70px;
     }
+
+    @media screen and (max-width: 1200px) {
+
+        &__nav {
+            display: none;
+        }
+        
+        &__main {
+            height: 350px;
+        }
+    }
 }

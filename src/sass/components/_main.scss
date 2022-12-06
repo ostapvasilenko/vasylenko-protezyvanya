@@ -16,6 +16,12 @@
     &_item:hover {
         color: #053412;
     }
+
+    @media screen and (max-width: 767px) {
+       & {
+            display: none;
+        }
+    }
 }
 
 .active {
@@ -42,6 +48,12 @@
         background: #DEDEDE;
         border-radius: 10px;
         padding: 44px;
+
+        @media screen and (max-width: 1200px) {
+            & {
+                display: block;
+            }
+        }
 
         &_number {
             font-weight: 700;
@@ -109,10 +121,12 @@
             color: black;
             margin-bottom: 0;
         }
+
         &_img-one {
             width: 30px;
             height: 38px;
         }
+
         &_img-two {
             width: 38px;
             height: 38px;
@@ -123,6 +137,7 @@
 }
 
 .registration {
+
     background-color: #C6DBCC;
     padding: 90px 0px 148px;
     margin-top: 42px;
@@ -140,24 +155,24 @@
         font-size: 22px;
         color: #000000;
         margin-top: 56px;
-    }
 
-    &__subtitle p {
-        color: gray;
-    }
+        & p {
+            color: gray;
+        }
 
-    &__subtitle_next p {
-        color: gray;
+        &_next p {
+            color: gray;
+        }
     }
 
     &__form {
         width: 100%;
         height: 60px;
-    }
 
-    &__form_next {
-        width: 45px;
-        height: 45px;
+        &_next {
+            width: 45px;
+            height: 45px;
+        }
     }
 
     &__img {
@@ -166,10 +181,10 @@
         width: 40px;
         background-color: #000000;
         border-radius: 50%;
-    }
 
-    &__img img {
-        position: absolute;
+        & img {
+            position: absolute;
+        }
     }
 
     &__text {
@@ -181,18 +196,18 @@
         cursor: pointer;
         font-size: 22px;
         color: #000000;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
     }
 
     &__size_item {
         margin-left: -22px;
-    }
-
-    &__text input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
     }
 
     &__text:hover input~.checkmark {
@@ -260,13 +275,13 @@
         border-radius: 10px;
         padding-top: 18px;
         padding-bottom: 24px;
-    }
 
-    &__button_text {
-        font-weight: 700;
-        font-size: 32px;
-        color: #FFFFFF;
-        margin-bottom: 0;
+        &_text {
+            font-weight: 700;
+            font-size: 32px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -292,32 +307,32 @@ input[type='radio'] {
     -moz-appearance: none;
     appearance: none;
     outline: none;
-}
 
-input[type='radio']::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: 2px solid #64A476;
-}
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 2px solid #64A476;
+    }
 
-input[type='radio']:checked::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #16682C;
-    transform: translate(-50%, -50%);
-    visibility: visible;
+    &:checked::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #16682C;
+        transform: translate(-50%, -50%);
+        visibility: visible;
+    }
 }
 
 .checkbox {
@@ -346,20 +361,15 @@ input {
     border: 2px solid #64A476;
 }
 
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
 
-@media screen and (max-width: 1200px) {
-    .hero__main-body {
-        display: block;
-    }
-}
+// @media screen and (max-width: 1200px) {
+//     .hero__main-body {
+//         display: block;
+//     }
+// }
 
-@media screen and (max-width: 767px) {
-    .last__menu {
-        display: none;
-    }
-}
+// @media screen and (max-width: 767px) {
+//     .last__menu {
+//         display: none;
+//     }
+// }

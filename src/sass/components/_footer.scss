@@ -1,4 +1,78 @@
-.footer{
-    background-color: black;
-    color: #fff;
+.footer {
+
+    &__main {
+        background: #053412;
+        height: 318px;
+    }
+
+    &__last {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #01270C;
+        height: 60px;
+        color: #C2C2C2;
+    }
+
+    &__last p {
+        margin-bottom: 0;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo_text {
+        margin-left: 20px;
+        font-size: 24px;
+        color: #45965B;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__nav a {
+        font-weight: 700;
+        font-size: 24px;
+        color: #C0ECCC;
+        padding: 0px 25px 7px 18px;
+    }
+
+    &__nav_body {
+        background: #C0ECCC;
+        border-radius: 10px;
+        padding: 0px 15px 7px;
+        color: #003611 !important;
+    }
+
+    &__mail {
+        font-size: 20px;
+        color: #C0ECCC;
+    }
+
+    &__date {
+        color: #C0ECCC;
+    }
+
+    &__info_tel {
+        color: white;
+        font-size: 20px;
+        padding-top: 8px;
+    }
+
+    span &__info_tel {
+        padding-bottom: 8px;
+    }
+
+    &__info_tel span {
+        font-weight: 700;
+        color: white;
+        font-size: 20px;
+    }
+
+    &__info {
+        margin-right: 70px;
+    }
 }
